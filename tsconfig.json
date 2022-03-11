@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": ".",
+    "lib": ["es2015"],
+    "rootDir": ".",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "allowJs": true,
+    "paths": {
+      "@src/*": ["./src/*"]
+    },
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "jest.config.js",
+    "prettier.config.cjs",
+    "ormconfig.js",
+    "web/*"
+  ]
+}

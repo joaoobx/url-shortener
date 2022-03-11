@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: localhost
+    env_file:
+      - .env
+    volumes:
+      - dbdata:/data/mysql
+    ports:
+      - ${MYSQL_ROOT_PORT}:3306
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  dbdata:
+  node_modules:
